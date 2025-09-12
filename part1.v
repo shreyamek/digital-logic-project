@@ -1,3 +1,4 @@
+//We used iVerilog to compile and run this code, and VSCode as the IDE. We also used the Verilog-HDL/SystemVerilog/Bluespec SystemVerilog Extension by Masahiro Hiramori to help with formatting.
 //----------------------------------------------------------------------
 module Breadboard	(w,x,y,z, f0, f1, f2, f3, f4, f5, f6, f7, f8, f9);  //Module Header
 input w,x,y,z;                                  //Specify inputs
