@@ -17,13 +17,13 @@ f3 = x | w;
 
 f4 = ~x&~z & (~w | ~y) | ~w&~y;
 
-f5 = ~w&x | ~w&z | w&~x&z;
+f5 = ~w&x | ~w&z | ~x&z;
 
 f6 = ~w | x&y&z;
 
-f7 = ~w&~x | ~w&y | ~w&~y&z;
+f7 = ~w&~x | ~w&y | ~w&z;
 
-f8 = ~w & (~x&y | x&~y);
+f8 = ~w&~x&y | ~w&x&~y;
 
 f9 = ~w&~x&~y&~z | ~w&~x&y&z | w&x&~y&~z | w&x&y&z | w&~x&~y&z;
 	
