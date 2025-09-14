@@ -10,7 +10,8 @@ always @ ( w,x,y,z,f0,f1,f2,f3,f4,f5,f6,f7,f8,f9) begin       //Create a set of 
 
 f0 = y;
 
-f1 = y&z | ~w&~x&z | ~w&x&y | x&~y&~z | w&x&~y | w&~y&~z | w&~x&y;
+
+f1 = y&z | ~w&~x&z | ~w&x&~z | w&~x&~z | w&x&~y;
 
 f2 = ~x&~y&~z | x&~y&z | ~x&y&z | x&y&~z;
 
