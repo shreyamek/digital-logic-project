@@ -2,15 +2,13 @@
 //We also used the Verilog-HDL/SystemVerilog/Bluespec SystemVerilog Extension by Masahiro Hiramori to help with formatting.
 //----------------------------------------------------------------------
 module Breadboard	(w,x,y,z, f0, f1, f2, f3, f4, f5, f6, f7, f8, f9);  //Module Header
-input w,x,y,z;                                  //Specify inputs
-output f0, f1, f2, f3, f4, f5, f6, f7, f8, f9;   //Specify outputs
+input w,x,y,z;                                  //inputs
+output f0, f1, f2, f3, f4, f5, f6, f7, f8, f9;   //outputs
 reg f0, f1, f2, f3, f4, f5, f6, f7, f8, f9;      //Output is a memory area.
 
 always @ ( w,x,y,z,f0,f1,f2,f3,f4,f5,f6,f7,f8,f9) begin       //Create a set of code that works line by line 
-                                         //when these variables are used
 
 f0 = y;
-
 
 f1 = y&z | ~w&~x&z | ~w&x&~z | w&~x&~z | w&x&~y;
 
@@ -71,7 +69,6 @@ module testbench();
 		c=(i/2)%2;
 		d=(i/1)%2;//Low bit	
 		 
-		//Oh, Dr. Becker, do you remember what belongs here? 
 		#5;
  
 		 	
